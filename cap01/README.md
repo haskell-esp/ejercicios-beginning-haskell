@@ -4,11 +4,11 @@
 
 * En Haskell, todas las piezas de código consisten en *expresiones* que se evalúan de forma similar a las funciones matemáticas.
 * Las expresiones en Haskell son puras, no tienen *side-effects*, por lo tanto las funciones, que se componen de expresiones, también son puras.
-* Las funciones puras son más *componibles* que los procedimientos (o funciones no puras). Para saber más sobre la importancia de la composicionalidad os recomiendo ver a Brian Beckman explicando [la composición es **la forma** de controlar la complejidad](https://youtu.be/ZhuHCtR3xq8?t=16m46s)
+* Las funciones puras son más *componibles* que los procedimientos (o funciones no puras). Para saber más sobre la importancia de la composicionalidad os recomiendo ver a **Brian Beckman** explicando [la composición es **la forma** de controlar la complejidad](https://youtu.be/ZhuHCtR3xq8?t=16m46s)
 * Haskell por defecto opera en un modo de evaluación perezosa (*lazy evaluation*), eso significa que las expresiones solo se evalúan cuando se necesitan.
 * Un sistema de tipos (*type system*) es una abstracción que categoriza los valores que pueden aparecer durante la ejecución de un programa. Los tipos se utilizan para poner restricciones o invariantes a las operaciones que se pueden hacer sobre los valores.
 * El chequeo de tipos se puede realizar en dos momentos:
-  1. antes de ejecutar el programa durante la *compilación* (sistema de tipos estático) 
+  1. antes de ejecutar el programa durante la *compilación* (sistema de tipos estático)
   2. o bien mientras se ejecuta el programa durante la ejecución o *runtime* (sistema de tipos dinámico)
 * El sistema de tipos de Haskell es estático.
 * El sistema de tipos de Haskell es también *muy fuerte*, mientras más fuerte un sistema de tipos más restricciones o invariantes se usan sobre sus valores.
@@ -19,7 +19,7 @@
 
 ## Historia de Haskell ##
 
-Haskell es considerado un sucesor de [Miranda](https://en.wikipedia.org/wiki/Miranda_(programming_language)) a su vez influenciado por [SASL](https://en.wikipedia.org/wiki/SASL_programming_language) y [KRC](https://en.wikipedia.org/wiki/Kent_Recursive_Calculator), los últimos tres diseñados por [David Turner](https://en.wikipedia.org/wiki/David_Turner_(computer_scientist)) y todos ellos influenciados por [ISWIM](https://en.wikipedia.org/wiki/ISWIM) diseñado por [Peter Landin](https://en.wikipedia.org/wiki/Peter_Landin). Podéis encontrar más información al respecto en el paper [Conception, Evolution, and Application of Functional Programming Languages](http://www.dbnet.ece.ntua.gr/~adamo/languages/books/p359-hudak.pdf) escrito por [Paul Hudak](https://en.wikipedia.org/wiki/Paul_Hudak) (uno de los integrantes del comité que diseñó Haskell).
+Haskell es considerado un sucesor de [Miranda](https://en.wikipedia.org/wiki/Miranda_(programming_language)) a su vez influenciado por [SASL](https://en.wikipedia.org/wiki/SASL_programming_language) y [KRC](https://en.wikipedia.org/wiki/Kent_Recursive_Calculator), los últimos tres diseñados por [**David Turner**](https://en.wikipedia.org/wiki/David_Turner_(computer_scientist)) y todos ellos influenciados por [ISWIM](https://en.wikipedia.org/wiki/ISWIM) diseñado por [**Peter Landin**](https://en.wikipedia.org/wiki/Peter_Landin). Podéis encontrar más información al respecto en el paper [Conception, Evolution, and Application of Functional Programming Languages](http://www.dbnet.ece.ntua.gr/~adamo/languages/books/p359-hudak.pdf) escrito por [**Paul Hudak**](https://en.wikipedia.org/wiki/Paul_Hudak) (uno de los integrantes del comité que diseñó Haskell).
 
 Durante los años 90 se produjeron varias versiones de Haskell, culminando en un reporte llamado [Haskell 98](https://www.haskell.org/onlinereport/) y que fue tomado como estándar de implementación para compiladores de Haskell.
 
@@ -139,7 +139,7 @@ Otra opción que podemos cambiar es la que establece el _prompt_ de nuestra sesi
 >λ=. 1/2 + 1/3
 0.8333333333333333
 :unset prompt
-*Main> 
+*Main>
 ```
 
 Para ver las opciones que están activas en la sesión utilizad `:set` a secas:
@@ -166,7 +166,7 @@ with the following modifiers:
   -XNoDatatypeContexts                       # <- Ver (1) más abajo
   -XNondecreasingIndentation                 # <- Ver (2) más abajo
  ```
- 
+
 El compilador GHC permite activar y desactivar *features* del lenguaje, estos *features* se pueden activar/desactivar globalmente para todo un proyecto o localmente en módulos determinados utilizando las [Language Pragmas](https://wiki.haskell.org/Language_Pragmas) (Hablaremos más de esto en el futuro)
 
 1. <span style="color:red">(1)</span> En Haskell cuando declaramos tipos de datos genéricos podemos establecer límites al tipo que podemos utilizar en la posición de la variable de tipo, por ejemplo, lo siguiente declara un tipo de datos `Size` parametrizado en un tipo `a` pero no cualquier `a` sino cualquier tipo `a` que pueda considerarse un número (`Int`, `Float`, `Natural`, `Word`,...):
