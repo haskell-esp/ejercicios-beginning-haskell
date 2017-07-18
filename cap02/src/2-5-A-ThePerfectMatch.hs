@@ -108,3 +108,13 @@ salesPromotion (tm : tms) discount =
   in (tm1 : (salesPromotion tms discount))
   where
     TimeMachine manufacturer model name direction price = tm
+
+{- GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+λ: :l cap02/src/2-5-A-ThePerfectMatch.hs 
+[1 of 1] Compiling Main ( cap02/src/2-5-A-ThePerfectMatch.hs, interpreted )
+Ok, modules loaded: Main.
+λ: genderStat clientList 
+(1,1,0)
+λ: salesPromotion tmList 0.90
+[TimeMachine "ACME" 123 "Ok1" ToPast 90.0,TimeMachine "Hskl" 7 "Ok2" ToFuture 135.0]
+-}
