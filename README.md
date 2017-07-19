@@ -11,4 +11,5 @@ Código y ejercicios del libro [Beginning Haskell](http://www.apress.com/us/book
   - [Historia de Haskell](https://github.com/haskell-esp/ejercicios-beginning-haskell/tree/master/cap01#historia-de-haskell)
   - [Instalar Haskell](https://github.com/haskell-esp/ejercicios-beginning-haskell/tree/master/cap01#instalar-haskell)
   - [Ejecución](https://github.com/haskell-esp/ejercicios-beginning-haskell/tree/master/cap01#ejecución)
-
+- [Capítulo 02](https://github.com/haskell-esp/ejercicios-beginning-haskell/tree/master/cap02#declaring-the-data-model)
+  - [Resumen](https://github.com/haskell-esp/ejercicios-beginning-haskell/tree/master/cap02#resumen)
